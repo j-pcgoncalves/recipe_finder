@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import configEnv from "./configEnv";
 
 const App = () => {
-  const APP_ID = process.env.REACT_APP_API_ID;
-  const APP_KEY = process.env.REACT_APP_API_KEY;
+  const APP_ID = configEnv.APP_ID;
+  const APP_KEY = configEnv.APP_KEY;
 
   const [recipes, setRecipes] = useState([]);
   const [query, setQuery] = useState("Turkey");

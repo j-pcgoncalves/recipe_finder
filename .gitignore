@@ -2,6 +2,7 @@
 
 # API KEYS and IDS
 .env
+/src/configEnv.js
 
 # dependencies
 /node_modules
