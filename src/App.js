@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import configEnv from "./configEnv";
 import Spinner from "./components/spinner/Spinner";
+import Recipe from "./components/recipe/Recipe";
 
 const App = () => {
   const APP_ID = configEnv.APP_ID;
@@ -61,9 +62,16 @@ const App = () => {
       </form>
 
       {isLoading ? <Spinner /> : <div className="eachRecipe">
-        
-        </div>
-      }
+          {recipes.map((recipe, index) => (
+            <Recipe 
+              key={index}
+              label={recipe.recipe.label}
+              calories={recipe.recipe.calories}
+              img={recipe.recipe.image}
+              ingredients={recipe.recipe.ingredients}
+            />
+          ))}
+        </div> }
     </div>
   );
 }

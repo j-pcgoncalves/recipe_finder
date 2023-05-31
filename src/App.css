@@ -37,3 +37,9 @@
   box-shadow: 0 5px #666;
   transform: translateY(-5px);
 }
+
+.eachRecipe {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
