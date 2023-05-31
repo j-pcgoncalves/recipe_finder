@@ -1,3 +1,5 @@
+Credits to [Burak Orkmez](https://github.com/burakorkmez).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
