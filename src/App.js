@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import configEnv from "./configEnv";
+import Spinner from "./components/spinner/Spinner";
 
 const App = () => {
   const APP_ID = configEnv.APP_ID;
@@ -58,6 +59,11 @@ const App = () => {
           Search
         </button>
       </form>
+
+      {isLoading ? <Spinner /> : <div className="eachRecipe">
+        
+        </div>
+      }
     </div>
   );
 }
