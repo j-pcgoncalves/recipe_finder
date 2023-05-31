@@ -3,6 +3,7 @@ import "./App.css";
 import configEnv from "./configEnv";
 import Spinner from "./components/spinner/Spinner";
 import Recipe from "./components/recipe/Recipe";
+import Footer from "./components/ui/Footer";
 
 const App = () => {
   const APP_ID = configEnv.APP_ID;
@@ -72,6 +73,7 @@ const App = () => {
             />
           ))}
         </div> }
+        <Footer />
     </div>
   );
 }
